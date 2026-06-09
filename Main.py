@@ -1,6 +1,6 @@
 from solid2 import *
 
-def generate_gear(m, z):
+def generate_gear(m, z, dist):
     blank = cylinder(r=m*(z+2)/2, h=10)
     tool = cube([10, 5, 12]) # À remplacer par la forme de dent
 
@@ -10,4 +10,5 @@ def generate_gear(m, z):
 
     blank.save_as_scad("gear.scad")
 
-generate_gear(2,25)
+generate_gear(2,25, 30)
+
